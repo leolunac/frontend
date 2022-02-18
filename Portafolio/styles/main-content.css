@@ -1,0 +1,264 @@
+@import url('./root.css');
+
+/* 320px and up */
+#sect-services {
+    width: 95%;
+    margin-right: 0;
+}
+
+#sect-services>h2 {
+    margin-right: 5%;
+}
+
+.sect-services__container {
+    overflow-x: scroll;
+}
+
+.sect-services__container::-webkit-scrollbar {
+    display: none;
+}
+
+.sect-services__content {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    padding-right: 5%;
+}
+
+.sect-services__service {
+    background-color: var(--cards-background-color);
+    background-image: url('../assets/vectors/Ellipse14.svg');
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center 0;
+    padding: 5% .5rem 2rem .5rem;
+    border-radius: .3rem;
+}
+
+.sect-services__service:nth-child(2) {
+    margin: 0 1rem;
+}
+
+.sect-services__service>h3 {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: var(--font-weight-semi-bold);
+    margin-bottom: 1.5rem;
+}
+
+.sect-services__service>p {
+    display: inline-block;
+    min-width: 200px;
+    max-width: 220px;
+}
+
+.sect-myskills__bar:nth-child(3) {
+    margin: 1rem 0;
+}
+
+.sect-myskills__bar label {
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.sect-myskills__bar span {
+    color: var(--title-subtitle-color);
+    font-size: 14px;
+}
+
+.sect-myskills__info {
+    justify-content: space-between;
+    display: flex;
+}
+
+.sect-myskills__info--1, .sect-myskills__info--3 {
+    width: 80%;
+}
+
+.sect-myskills__info--2 {
+    width: 95%;
+}
+
+progress {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 1rem;
+}
+  
+::-webkit-progress-bar {
+    background-color: var(--cards-background-color);
+    border-radius: 1rem;
+}
+
+::-webkit-progress-value {
+    background-color: var(--title-subtitle-color);
+    border-radius: 1rem;
+}
+
+#sect-portfolio {
+    width: 95%;
+    margin-right: 0;
+}
+
+#sect-portfolio>h2 {
+    margin-right: 5%;
+}
+
+.sect-portfolio__container {
+    overflow-x: scroll;
+}
+
+.sect-portfolio__container::-webkit-scrollbar {
+    display: none;
+}
+
+.sect-portfolio__content {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+}
+
+.sect-portfolio__portfolio-img {
+    width: 75%;
+    max-width: 400px;
+    margin: 0 1%;
+}
+
+.sect-portfolio__portfolio-img:first-child {
+    margin-left: 0;
+}
+
+.sect-portfolio__portfolio-img:last-child {
+    margin-right: 0;
+}
+
+.contact__content {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__media {
+    background-color: #FFFFFF;
+    background-image: url(../assets/vectors/Ellipse14.svg);
+    background-size: 110%;
+    background-position: center -2rem;
+    background-repeat: no-repeat;
+    width: 11rem;
+    height: 10rem;
+    padding-bottom: 1.5rem;
+    border-radius: .2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.contact__media:first-child {
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+.contact__media:last-child {
+    margin-top: 1rem;
+    align-self: flex-end;
+}
+
+.contact__media>img {
+    width: 60px;
+    height: 60px;
+}
+
+.contact__media>h4 {
+    color: black;
+    margin: .5rem 0 .2rem 0;
+}
+
+.contact__media>p {
+    font-size: 14px;
+}
+
+
+/* 768px and up */
+@media only screen and (min-width: 768px) {
+
+    #sect-aboutme {
+        max-width: 550px;
+    }
+
+    #sect-services {
+        margin-right: auto;
+        width: 90%;
+    }
+    
+    #sect-services>h2 {
+        margin-right: 0;
+    }
+    
+    .sect-services__content {
+        padding-right: 0;
+    }
+
+    .sect-services__service {
+        padding: 7% .5rem 3rem .5rem;
+    }
+
+    #sect-myskills {
+        max-width: 550px;
+    }
+
+    #sect-contact {
+        max-width: 550px;
+    }
+
+}
+
+
+/* 992px and up */
+@media only screen and (min-width: 992px) {
+
+    .sect-services__service>p {
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    .sect-portfolio__container {
+        padding-bottom: .5rem;
+    }
+
+    .sect-portfolio__container::-webkit-scrollbar {
+        display: initial;
+        background: var(--body-background-color-contrast);
+        height: .5rem;
+        border-radius: 1rem;
+    }
+
+    .sect-portfolio__container::-webkit-scrollbar-thumb {
+        background: var(--font-color);
+        border-radius: 1rem;
+    }   
+
+}
+
+
+/* 1785px and up */
+@media only screen and (min-width: 1750px) {
+
+    #sect-portfolio {
+        width: 90%;
+        margin: auto;
+    }
+
+    #sect-portfolio>h2 {
+        margin-right: auto;
+    }
+
+    .sect-portfolio__container {
+        overflow-x: initial;
+    }
+
+    .sect-portfolio__content {
+        justify-content: center;
+        padding: 0;
+    }
+
+}

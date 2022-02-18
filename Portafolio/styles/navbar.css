@@ -1,0 +1,91 @@
+@import url('./root.css');
+
+/* 320px and up */
+.header {
+    background-color: var(--body-background-color);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header__navbar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__navbar label {
+    margin-right: 1rem;
+}
+
+.header__ul {
+    background-color: var(--body-background-color-contrast);
+    width: 100%;
+    padding: 1rem 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+    transition: .5s all;
+    opacity: 0;
+}
+
+#menu-icon {
+    display: none;
+}
+
+#menu-icon:checked ~ .header__ul {
+    visibility: visible;
+    opacity: 1;
+    transition: .5s all;
+}
+
+.header__li {
+    text-align: center;
+    padding: 1rem 0;
+    list-style: none;
+}
+
+.header__a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+.header__a--selected {
+    color: var(--title-subtitle-color);
+}
+
+.header__a:hover {
+    color: var(--title-subtitle-color);
+}
+
+
+/* 768px and up */
+@media only screen and (min-width: 768px) {
+
+    .header__navbar label {
+        display: none;
+    }
+
+    .header__navbar {
+        height: 70px;
+        align-items: flex-end;
+    }
+
+    .header__ul {
+        background-color: transparent;
+        padding: 0;
+        visibility: visible;
+        position: static;
+        transition: none;
+        opacity: 1;
+        display: flex;
+        justify-content: space-around;
+    }   
+
+}

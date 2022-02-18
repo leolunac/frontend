@@ -1,0 +1,21 @@
+@import url('./root.css');
+
+footer {
+    background-color: var(--body-background-color-contrast);
+    font-size: var(--font-size-subsection-mobile);
+    text-align: center;
+    color: var(--title-subtitle-color);
+    padding: 2rem 0;
+}
+
+
+/* 992px and up */
+@media only screen and (min-width: 992px) {
+
+    footer {
+        background-color: var(--body-background-color-contrast);
+        font-size: 14px;
+        padding: 4rem 0;
+    }
+
+}

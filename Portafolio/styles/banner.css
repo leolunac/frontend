@@ -1,0 +1,212 @@
+@import url('./root.css');
+
+/* 320px and up */
+.sect-banner {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+}
+
+.sect-banner::before {
+    content: '';
+    background-color: var(--body-background-color-contrast);
+    width: 110%;
+    max-width: 600px;
+    height: 95%;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    margin: auto;
+    left: -5%;
+    right: -5%;
+}
+
+.sect-banner__info {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.sect-banner__info--left, .sect-banner__info--right {
+    margin-bottom: 1rem;
+}
+
+.sect-banner__soy {
+    font-weight: var(--font-weight-regular);
+}
+
+h1 {
+    margin-top: -.5rem;
+}
+
+.sect-banner__hr-desktop {
+    display: none;
+    margin: .5rem 0;
+}
+
+.sect-banner__hr-mobile {
+    background-color: var(--font-color);
+    height: 3px;
+    width: 230px;
+    margin: .5rem 0;
+}
+
+.sect-banner__years {
+    color: var(--title-subtitle-color);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.sect-banner__social {
+    max-width: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sect-banner__icon-social {
+    background-color: var(--font-color);
+    padding: .5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.sect-banner__leopoldo-img {
+    width: 85%;
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: -2%;
+    position: relative;
+    z-index: 1;
+}
+
+.sect-banner__leopoldo-img>img {
+    width: 100%;
+}
+
+.sect-banner__media {
+    background-color: var(--body-background-color-contrast);
+    max-width: 550px;
+    margin: auto;
+    border-radius: .5rem;
+    position: relative;
+    z-index: 20;
+}
+
+.sect-banner__container-media {
+    width: 90%;
+    margin: auto;
+    padding: 4% 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sect-banner__icon-media {
+    background-color: var(--font-color);
+    width: 100%;
+    margin: 0 5%;
+    padding: .3rem 0;
+    border-radius: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect-banner__icon-media>a {
+    width: 50%;
+    display: flex;
+}
+
+.sect-banner__icon-media img {
+    width: 100%;
+}
+
+
+/* 768px and up */
+@media only screen and (min-width: 768px) {
+
+    .sect-banner {
+        width: 90%;
+        max-width: 768px;
+    }
+    
+    .sect-banner__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sect-banner__info--right {
+        flex-grow: .1;
+    }
+
+    .sect-banner__media {
+        max-width: 900px;
+    }
+
+    .sect-banner__icon-media {
+        width: 150px;
+    }
+
+}
+
+
+/* 992px and up */
+@media only screen and (min-width: 992px) {
+
+    .sect-banner {
+        width: 90%;
+    }
+
+    .sect-banner__hr-desktop {
+        display: block;
+        margin: .5rem 0;
+        background-color: var(--font-color);
+        height: 3px;
+        width: 215px;
+        margin: .5rem 0;
+    }
+
+    h1 {
+        margin-top: -.5rem;
+    }
+    
+    .sect-banner__hr-mobile {
+        display: none;
+    }
+    
+    .sect-banner__icon-social:hover {
+        background-color: var(--title-subtitle-color);
+        cursor: pointer;
+    }
+
+    .sect-banner__icon-media:hover {
+        background-color: var(--title-subtitle-color);
+        cursor: pointer;
+    }
+
+}
+
+
+/* 1200px and up */
+@media only screen and (min-width: 1200px) {
+
+    .sect-banner {
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    .sect-banner__hr-desktop {
+        display: block;
+        margin: .5rem 0;
+        background-color: var(--font-color);
+        height: 3px;
+        width: 650px;
+        margin: .5rem 0;
+    }
+
+    h1 {
+        margin-top: -2rem;
+    }
+
+}

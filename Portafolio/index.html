@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Portafolio Leopoldo 4</title>
+  </head>
+  <body>
+
+    <header class="header">
+        <nav class="header__navbar">
+            <input type="checkbox" id="menu-icon">
+            <label for="menu-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H21" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 6H21" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 18H21" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+            </label>
+            <ul class="header__ul">
+                <li class="header__li"><a href="#sect-home" class="header__a header__a--selected">Home</a></li>
+                <li class="header__li"><a href="#sect-aboutme" class="header__a">Acerca de mí</a></li>
+                <li class="header__li"><a href="#sect-services" class="header__a">Servicios</a></li>
+                <li class="header__li"><a href="#sect-myskills" class="header__a">Mis habilidades</a></li>
+                <li class="header__li"><a href="#sect-portfolio" class="header__a">Mi portafolio</a></li>
+                <li class="header__li"><a href="#sect-contact" class="header__a">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="sect-banner">
+      <div class="sect-banner__info">
+        <div class="sect-banner__info--left">
+          <hgroup>
+              <h2 class="sect-banner__soy">Soy</h2>
+              <hr class="sect-banner__hr-desktop">
+              <h1 id="sect-home">Leopoldo</h1>
+              <hr class="sect-banner__hr-mobile">
+              <h3>
+                Desarrollador
+                <br>
+                web full stack
+              </h3>
+          </hgroup>
+        </div>
+        <div class="sect-banner__info--right">
+          <div class="sect-banner__years-experience">
+            <h3>
+              <span class="sect-banner__years">3 años</span>
+              <br>
+              experiencia
+            </h3>
+          </div>
+          <br>
+          <div class="sect-banner__social">
+            <div><a href="#" target="_blank" class="sect-banner__icon-social"><img src="./assets/icons/cib_linkedin-in.svg" alt="Leopoldo - Linkedin"></a></div>
+            <div><a href="#" target="_blank" class="sect-banner__icon-social"><img src="./assets/icons/ant-design_instagram-filled.svg" alt="Leopoldo - Instagra"></a></div>
+            <div><a href="#" target="_blank" class="sect-banner__icon-social"><img src="./assets/icons/ant-design_twitter-outlined.svg" alt="Leopoldo - Twitter"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="sect-banner__leopoldo-img">
+        <img src="./assets/images/Leopoldo-removebg-preview.png" alt="Leopoldo">
+      </div>
+      <div class="sect-banner__media">
+        <div class="sect-banner__container-media">
+          <div class="sect-banner__icon-media"><a href="#" target="_blank"><img src="./assets/images/akar-icons_google-fill.png" alt="Google - icon"></a></div>
+          <div class="sect-banner__icon-media"><a href="#" target="_blank"><img src="./assets/images/ant-design_amazon-outlined.png" alt="Amazon - icon"></a></div>
+          <div class="sect-banner__icon-media"><a href="#" target="_blank"><img src="./assets/images/bi_spotify.png" alt="Spotify - icon"></a></div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section id="sect-aboutme">
+        <h2>Acerca de mí</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat natus
+          quidem tenetur porro excepturi. Sit rerum quis ea doloribus modi fugit,
+          suscipit nulla cupiditate vel eum molestias non, sequi voluptates
+          veritatis labore ducimus natus delectus.
+        </p>
+      </section>
+
+      <section id="sect-services">
+        <h2>Servicios</h2>
+        <div class="sect-services__container">
+          <div class="sect-services__content">
+            <div class="sect-services__service">
+              <div class="sect-services__img-service">
+                <img src="./assets/icons/iconoir_design-pencil.svg" alt="Pencil">
+              </div>
+              <h3>UX/UI Design</h3>
+              <p>
+                Desde diseño hasta implementación del desarrollo
+              </p>
+            </div>
+            <div class="sect-services__service">
+              <div class="sect-services__img-service">
+                <img src="./assets/icons/majesticons_speakerphone-line.svg" alt="Speakerphone">
+              </div>
+              <h3>Marketing</h3>
+              <p>
+                Desde diseño hasta implementación del desarrollo
+              </p>
+            </div>
+            <div class="sect-services__service">
+              <img src="./assets/icons/feather_search.svg" alt="Search">
+              <h3>Research</h3>
+              <p>
+                Desde diseño hasta implementación del desarrollo
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sect-myskills">
+        <h2>Mis habilidades</h2>
+        <div class="sect-myskills__bar">
+          <div class="sect-myskills__info sect-myskills__info--1">
+            <label for="marketing">Marketing</label>
+            <span>80%</span>
+          </div>
+          <progress id="marketing" max="100" value="80"></progress>
+        </div>
+        <div class="sect-myskills__bar">
+          <div class="sect-myskills__info sect-myskills__info--2">
+            <label for="ui-design">UI Design</label>
+            <span>95%</span>
+          </div>
+          <progress id="ui-design" max="100" value="95"></progress>
+        </div>
+        <div class="sect-myskills__bar">
+          <div class="sect-myskills__info sect-myskills__info--3">
+            <label for="research">UX/Research</label>
+            <span>80%</span>
+          </div>
+          <progress id="research" max="100" value="80"></progress>
+        </div>
+      </section>
+
+      <section id="sect-portfolio">
+        <h2>Mi portafolio</h2>
+        <div class="sect-portfolio__container">
+          <div class="sect-portfolio__content">
+              <img src="./assets/images/Rectangle 65.jpg" alt="Portafolio 1" class="sect-portfolio__portfolio-img">
+              <img src="./assets/images/image 4.jpg" alt="Portafolio 2" class="sect-portfolio__portfolio-img">
+              <img src="./assets/images/Rectangle 53.jpg" alt="Portafolio 3" class="sect-portfolio__portfolio-img">
+              <img src="./assets/images/Group 47.jpg" alt="Portafolio 4" class="sect-portfolio__portfolio-img">
+          </div>
+        </div>
+      </section>
+
+      <section id="sect-contact" class="contact">
+        <h2>Contacto</h2>
+        <div class="contact__content">
+            <div class="contact__media">
+                <img src="./assets/icons/phone 3.svg" alt="Email icon">
+                <h4>Número celular</h4>
+                <p>5523652412</p>
+            </div>
+            <div class="contact__media">
+                <img src="./assets/icons/mail 3.svg" alt="Phone icon">
+                <h4>Email</h4>
+                <p>ejemplo@correo.com</p>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <p>Leopoldo Luna - Academlo</p>
+    </footer>
+
+    <script src="./Javascript/scripts.js"></script>
+
+  </body>
+</html>
